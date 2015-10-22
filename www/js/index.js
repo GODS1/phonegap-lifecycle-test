@@ -8,7 +8,6 @@ var value = “blue”;
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
 		window.localStorage.setItem( key, value );
-		var key = “pen”;
 		var value = window.localStorage.getItem(key);
 		prompt(key);
 		
