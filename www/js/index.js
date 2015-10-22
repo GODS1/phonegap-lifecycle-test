@@ -5,45 +5,11 @@ var key = “pen”;
 var value = “blue”; 
 
 
+
+
     function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady, false);
-		window.localStorage.setItem( key, value );
-		var value = window.localStorage.getItem(key);
-		prompt(key);
-		
-		console.log("device ready");
-    }
-	
-	function updateDisplay() {
-		$("#launched").text("Application launched: " + launched_count);
-		$("#resumed").text("Application paused: " + paused_count);
-		$("#paused").text("Application resumed: " + resumed_count);
-	}
-
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-		alert("device ready");
-        
-		document.addEventListener("resume", onResume, false);
-		document.addEventListener("pause", onPause, false);
-		
-		launched_count++;
-		updateDisplay();
-    }
-
-    // Handle the pause event
-    //
-    function onPause() {
-		alert("pause");
-		paused_count++;
-		updateDisplay();
-    }
-	
-	function onResume() {
-		alert("resume");
-		resumed_count++;
-		updateDisplay();
+var Flake = {
+"Name":"Flake", "Energy":"2230 kJ", "Fat":"30.5g", "Carbohydrates":"56g", "Fibre":"0.7g", "Protein":"8.1g", "Salt":"0.28"}
+Flake{0}.Name;
     }
 
